@@ -2,7 +2,7 @@
 This repository is under-construction. If you have questions, contact Andrea Fourquet. 
 
 Current continuous build
-http://build.fhir.org/ig/IHE/PCC.PCS/branches/master/index.html
+http://build.fhir.org/ig/IHE/PCC.RIPT/branches/master/index.html
 
 ## useful resources
 * [Sushi reference](http://hl7.org/fhir/uv/shorthand/reference.html)
