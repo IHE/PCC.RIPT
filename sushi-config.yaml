@@ -10,7 +10,6 @@ title: "IHE PCC - Routine Interfacility Patient Transport (RIPT)"
 description: This Implementation Guide addresses patient transport between hospitals and Emergency Medical Service (EMS) systems. Defining the hospital patient discharge documentation provided to the EMS transport team that informs them of important patient care information. 
 status: active
 publisher:
-publisher:
   - name: IHE Patient Care Coordination
   - url: https://www.ihe.net/ihe_domains/patient_care_coordination/
   - email: pcc@ihe.net
@@ -53,10 +52,10 @@ resources:
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate
   index.md:
-    title: 1:XX. Profile Home
+    title: RIPT Home
     generation: markdown
   volume-1.md:
-    title: 1:XX. Profile Volume 1
+    title: RIPT Volume 1
     generation: markdown
   domain-YY.md:
     title: 2:3.YY Transaction one [Domain-YY]
@@ -69,7 +68,7 @@ pages:
     generation: markdown
 
 menu:
-  FooBar Home: index.html
+  RIPT Home: index.html
   Volume 1:
     Introduction: volume-1.html
     Actors and Transactions: volume-1.html#actors-and-transactions
