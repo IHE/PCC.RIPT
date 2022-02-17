@@ -50,15 +50,14 @@ resources:
 
 
 pages:
-# itemize here each narrative page. Include assigned section numbers when appropriate
   index.md:
     title: RIPT Home
     generation: markdown
   volume-1.md:
     title: RIPT Volume 1
     generation: markdown
-  domain-YY.md:
-    title: 2:3.YY Transaction one [Domain-YY]
+  PCC-1.md:
+    title: 2:3.YY Transaction one [PCC-1]
     generation: markdown
   testplan.md:
     title: "Test Plan"
@@ -70,14 +69,8 @@ pages:
 menu:
   RIPT Home: index.html
   Volume 1:
-    Introduction: volume-1.html
-    Actors and Transactions: volume-1.html#actors-and-transactions
-    Actor Options: volume-1.html#actor-options
-    Required Groupings: volume-1.html#required-groupings
-    Overview: volume-1.html#overview
-    Security Considerations: volume-1.html#security-considerations
-    Cross-Profile Considerations: volume-1.html#grouping
+    Refferal For Interfacility Patient Transport Profile: volume-1.html
   Volume 2:
-    "Transaction one [Domain-YY]": domain-YY.html
+    "Transaction one [PCC-1]": PCC-1.html
   Test Plan: testplan.html
   Artifacts: artifacts.html
