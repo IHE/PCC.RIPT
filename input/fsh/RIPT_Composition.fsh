@@ -1,3 +1,4 @@
+
 Profile:   IHE_RIPT_Composition
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
 Id:             IHE.PCC.RIPT.Composition
@@ -25,11 +26,11 @@ the following cardinalities follow the documentation in the PCS profile:
 * subject 1..1
 
 // in addition to the sections defined in IPS...
-* section contains and
+* section contains 
 	sectionCertificationOfMedicalNecessity 0..1 and
 	sectionCoverage 0..1 and 
 	sectionReasonForReferral 0..1 and 
-	sectionTransportInstructions 0..1 and 
+	sectionTransportInstructions 0..1  
 
 * section[sectionCoverage] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionCoverage] ^extension.valueString = "Section"
@@ -54,8 +55,8 @@ the following cardinalities follow the documentation in the PCS profile:
 * section[sectionReasonForReferral] ^definition = "This section shall include at least one entry describing the reason for referral as described in the Entry Content Module. "
 * section[sectionReasonForReferral].code = $loinc#42349-1
 * section[sectionReasonForReferral].code MS
-* section[sectionReasonForReferral].entry ..1 MS
-* section[sectionReasonForReferral].entry Reference(Observation and ConditionUvIps)
+* section[sectionReasonForReferral].entry 2..2 MS
+//* section[sectionReasonForReferral].entry Reference(Observation and ConditionUvIps)
 * section[sectionReasonForReferral].entry ^slicing.discriminator.type = #profile
 * section[sectionReasonForReferral].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionReasonForReferral].entry ^slicing.rules = #open
@@ -75,7 +76,7 @@ the following cardinalities follow the documentation in the PCS profile:
 * section[sectionCertificationOfMedicalNecessity].code = $loinc#52016-3
 * section[sectionCertificationOfMedicalNecessity].code MS
 * section[sectionCertificationOfMedicalNecessity].entry ..1 MS
-* section[sectionCertificationOfMedicalNecessity].entry Reference(Observation and ConditionUvIps)
+//* section[sectionCertificationOfMedicalNecessity].entry Reference(Observation and ConditionUvIps)
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.discriminator.type = #profile
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.rules = #open
@@ -86,7 +87,7 @@ the following cardinalities follow the documentation in the PCS profile:
 	MedicalNecessitySignature 0..1 MS and
 	MedicalNecessitySignatureDate 0..1 MS and
 	MedicalNecessityAsserter 0..1 MS and
-	MedicalNecessityAsserterType 0..1 MS and
+	MedicalNecessityAsserterType 0..1 MS 
 * section[sectionCertificationOfMedicalNecessity].entry[MedicalNecessityEntry] only Reference(Observation)
 * section[sectionCertificationOfMedicalNecessity].entry[MedicalNecessitySignature] only Reference(Observation)
 * section[sectionCertificationOfMedicalNecessity].entry[MedicalNecessitySignatureDate] only Reference(Observation)
