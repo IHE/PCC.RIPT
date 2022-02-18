@@ -23,4 +23,4 @@ the following cardinalities follow the documentation in the RIPT profile. The Bo
 - RE 0..1 Transport Instructions
 """
 
-* subject only Reference(US Core Patient Profiles)
+* subject only Reference(USCorePatientProfile)
