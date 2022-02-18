@@ -51,10 +51,10 @@ Table X.1-2 lists the content module(s) defined in the PCS Profile. To claim sup
 Transactional requirements are documented in PCC TF-2 Transactions. This section documents any additional requirements on profile’s actors.
 
 #### XX.1.1.1 Content Creator <a name="Content-Creator"> </a>
-The Content Creator shall be responsible for the creation of content of an Interfacility Transport Referral document containing the data elements defined in  PCC TF-3: 6.3.1.D or, where the FHIR is used, containing the FHIR Document Bundle defined TF-3: 6.6.x.1. 
+The Content Creator shall be responsible for the creation of content of an Interfacility Transport Referral document containing the data elements defined in  PCC TF-3: 6.3.1.D or, where the FHIR is used, containing the FHIR Document Bundle defined in the [RIPT IG](https://build.fhir.org/ig/IHE/PCC.RIPT/branches/master/StructureDefinition-IHE.PCC.RIPT.Composition.html). 
 
 #### XX.1.1.2 Content Consumer <a name="Content-Consumer"> </a>
-The Content Creator shall be responsible for the creation of content of an Interfacility Transport Referral document containing the data elements defined in PCC TF-3: 6.3.1.D.5 or, where the FHIR is used, containing the FHIR Document Bundle defined TF-3: 6.6.x.1. 
+The Content Creator shall be responsible for the creation of content of an Interfacility Transport Referral document containing the data elements defined in PCC TF-3: 6.3.1.D.5 or, where the FHIR is used, containing the FHIR Document Bundle defined in the [RIPT IG](https://build.fhir.org/ig/IHE/PCC.RIPT/branches/master/StructureDefinition-IHE.PCC.RIPT.Composition.html). 
 
 ##### XX.1.1.2.1 Trigger Events
 Upon the discharge or transfer order of a patient, a Transport Data Summary will be generated
@@ -62,19 +62,15 @@ Upon the discharge or transfer order of a patient, a Transport Data Summary will
 ##### XX.1.1.2.2 Transaction Descriptions
 The transactions in this profile are summarized in the sections below.
 
-###### XX.1.1.2.2.1 FooBar do transaction
+###### XX.1.1.2.2.1 Document Sharing PCC-1
 
-This transaction is used to **do things**
+This transaction is used by the Content Creator and Content Consumer Actors. describes common functional requirements for content exchange.
 
 For more details see the detailed [Document Sharing PCC-1](PCC-1.html)
 
-###### XX.1.1.2.2.1 FooBar do transaction
-This transaction is used to **do things**
-
-For more details see the detailed [transaction description](ITI-65.html)
-
 ## XX.2 RIPT Actor Options <a name="actor-options"> </a>
 Options that may be selected for each actor in this profile, if any, are listed in the Table X.2-1. Dependencies between options, when applicable, are specified in notes.
+
 **Table X.2-1: Referral for Interfacility Patient Transport – Actors and Options**
 
 | Actors 			    | Option Name  				   				| Reference	|

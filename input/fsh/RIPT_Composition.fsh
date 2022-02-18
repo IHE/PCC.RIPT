@@ -1,11 +1,10 @@
-
 Profile:   IHE_RIPT_Composition
 Parent: http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
 Id:             IHE.PCC.RIPT.Composition
 Title: "Refferal For Interfacility Patient Transport"
 Description:      """
 composition of the FHIR elements that are used to build the FHIR Document for the Refferal For Interfacility Patient Transport document.
-the following cardinalities follow the documentation in the PCS profile: 
+the following cardinalities follow the documentation in the RIPT profile: 
 - RE 0..1 IPS Advance Directives 
 - R 1..1 IPS Allergies and Intolerances
 - R 1..1 IPS Medication Summary
