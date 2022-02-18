@@ -1,9 +1,9 @@
 Refferal For Interfacility Patient Transport (RIPT)
 =======
+
 **When a professional transport takes place, there is information that needs to be recorded into a transport organization’s patient record, needed for patient care that is not electronically available to the transport team. Much of the information is currently available in standard formats in electronic discharge summaries used in US, Canada and European healthcare settings using the HL7 CDA Release 2.0 Standard. Other standards, such as HL7 FHIR resources could also be used to communicate this information between the discharging facility and EMS transport company. The way that the transport company is contacted for the transport is out of the scope of this profile.**
 **The use of electronic transfer summaries benefits both hospitals and transport companies by decreasing staff time used to communicate such information, and hospitals will further benefit in reduced patient wait times for transfers and increase bed availability that could result from this time efficient transfer of this information. IHE is an excellent venue to solve this problem because it already has substantial experience with the standards that will be used and the necessary content and the knowledge of CDA-based discharge summaries (e.g., MS XPHR). IHE will also provide a mechanism for Transport system vendors and Hospital system vendors to establish and test a solution. Much of the content is already in the current, real world, EMR systems in hospitals and patient care facilities. This is regularly used when a patient is being transferred from a hospital into the rehab facility where the patient information is electronically sent to the facility that the patient is going to go into. This system can then be reused to fulfill transport system information needs.**
 
-=======
 
 [Open and Closed Issues](issues.html)
 
@@ -24,6 +24,8 @@ This guide is organized into four main sections:
 
 5. Appendix
    1. [FooBar do \[domain-YY\]](domain-YY.html) 
+
+
 =======
 1. Volume I: 
    1. [Overview](volume-1.html)

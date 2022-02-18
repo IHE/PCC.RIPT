@@ -60,6 +60,12 @@ pages:
   PCC-1.md:
     title: 2:3.YY Transaction one [PCC-1]
     generation: markdown
+  volume-3.md:
+    title: RIPT Volume 3
+    generation: markdown
+  volume-4.md:
+    title: RIPT Volume 4 
+    generation: markdown    
   testplan.md:
     title: "Test Plan"
     generation: markdown
@@ -73,5 +79,9 @@ menu:
     Refferal For Interfacility Patient Transport Profile: volume-1.html
   Volume 2:
     "Transaction one [PCC-1]": PCC-1.html
+  Volume 3:
+    Content Modules: volume-3.html
+  Volume 4:
+    National Extensions: volume-4.html
   Test Plan: testplan.html
   Artifacts: artifacts.html

@@ -1,0 +1,1 @@
+This provides the Mappings for the data elements definned in the RIPT Profile from NEMSIS to CDA and FHIR. 

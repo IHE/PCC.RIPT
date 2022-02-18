@@ -1,4 +1,4 @@
-=======
+
 # 1:XX Refferal For Interfacility Patient Transport (RIPT)
 This content profile defiines the Referral for Interfacility Patient Transport document that contains the inforamtion needed to be informed of the patient's condition during trasnport from the hospital to the transport system.
 
@@ -50,10 +50,10 @@ Table X.1-2 lists the content module(s) defined in the PCS Profile. To claim sup
 ### XX.1.1 Actor Descriptions and Actor Profile Requirements
 Transactional requirements are documented in PCC TF-2 Transactions. This section documents any additional requirements on profile’s actors.
 
-#### XX.1.1.1 Content Creator <a name="Content Creator"> </a>
+#### XX.1.1.1 Content Creator <a name="Content-Creator"> </a>
 The Content Creator shall be responsible for the creation of content of an Interfacility Transport Referral document containing the data elements defined in  PCC TF-3: 6.3.1.D or, where the FHIR is used, containing the FHIR Document Bundle defined TF-3: 6.6.x.1. 
 
-#### XX.1.1.2 Content Consumer <a name="Content Consumer"> </a>
+#### XX.1.1.2 Content Consumer <a name="Content-Consumer"> </a>
 The Content Creator shall be responsible for the creation of content of an Interfacility Transport Referral document containing the data elements defined in PCC TF-3: 6.3.1.D.5 or, where the FHIR is used, containing the FHIR Document Bundle defined TF-3: 6.6.x.1. 
 
 ##### XX.1.1.2.1 Trigger Events
