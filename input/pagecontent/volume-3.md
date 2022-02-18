@@ -37,6 +37,30 @@ Sections that are used according to the definitions in other specifications are 
 CDA Release 2.0 documents that conform to the requirements of this document content module shall indicate their conformance by the inclusion of the <templateId> XML elements in the header of the document. 
 A CDA Document may conform to more than one template. This content module inherits from the International Patient Summary (2.16.840.1.113883.10.22.1.1) and so must conform to the requirements of those templates as well this document specification, Referral for Interfacility Patient Transport Document (TemplateID).
 
+
+#### 6.3.1.D.5.2 Payor Constraint 
+Within the Payor section the Content Creator SHOULD be able to create a Coverage Entry (Template ID 1.3.6.1.4.1.19376.1.5.3.1.4.17 [PCC TF-2]) to identify the payment information for the patient being transported. 
+The coverage information SHOULD include: 
+
+| Optionality | Cardinality | Name                               | Vocabulary |
+|-------------|-------------|------------------------------------|------------|
+| RE 		  | [0..*]      | Insurance Company Name             |            |
+| RE 		  | [0..1]      | Insurance Company Billing Priority |            |
+| RE 		  | [0..1]      | Insurance Company Address          |            |
+| RE 		  | [0..1]      | Insurance Company City             |            |
+| RE 		  | [0..1]      | Insurance Company State            |            |
+| RE 		  | [0..1]      |  Insurance Company Zip code        |            |
+| RE 		  | [0..1]      | Insurance Company Country          |            |
+| RE 		  | [0..1]      | Insurance Group ID                 |            |
+| RE 		  | [0..1]      | Insurance Policy ID Number         |            |
+| RE 		  | [0..1]      | Last Name of the Insured           |            |
+| RE 		  | [0..1]      | First Name of the Insured          |            |
+| RE 		  | [0..1]      | Middle initial/name of the Insured |            |
+| RE 		  | [0..1]      | Relationship to the Insured        |            |
+| RE 		  | [0..1]      | Insurance Group Name               |            |
+{:grid}
+
+
 ### 6.3.2 CDA Header Content Modules
 No new Header Elements.
 
