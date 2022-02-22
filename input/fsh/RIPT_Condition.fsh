@@ -10,4 +10,5 @@ Description:      " This profile represents the constraints applied to the Condi
 * code ^slicing.ordered = false
 * code ^slicing.description = "Condition code slicing for ICD-10 capability"
 * code contains code:ICD10 0..1 MS
-* code[ICD10].system = http://hl7.org/fhir/sid/icd-10 (Required)
+* code[ICD10].system = http://hl7.org/fhir/sid/icd-10 (Required) 
+
