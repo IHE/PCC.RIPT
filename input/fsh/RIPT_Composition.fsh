@@ -119,4 +119,4 @@ the following cardinalities follow the documentation in the RIPT profile:
 	TrasnportInstructions 0..1 MS and
 	DestinationInformation 0..1 MS
 * section[sectionTransportInstructions].entry[TrasnportInstructions] Reference(Observation)
-* section[sectionTransportInstructions].entry[DestinationInformation] Reference(Location)
+* section[sectionTransportInstructions].entry[DestinationInformation] Reference(Observation)
