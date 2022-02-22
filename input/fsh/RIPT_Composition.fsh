@@ -96,7 +96,7 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionCertificationOfMedicalNecessity].entry[SignatureDate] only Reference(Observation)
 * section[sectionCertificationOfMedicalNecessity].entry[SignerProviderType] only Reference(PractitionerRole)
 * section[sectionCertificationOfMedicalNecessity].entry[SignerName] only Reference(Practitioner)
-* section[sectionCertificationOfMedicalNecessity].entry[Justification] only text
+* section[sectionCertificationOfMedicalNecessity].entry[Justification] only Reference(Observation)
 * section[sectionCertificationOfMedicalNecessity].entry[ReasonForTransport] only Reference(Observation)
 * section[sectionCertificationOfMedicalNecessity].entry[PriorAuthorizationCode] only Reference(Observation)
 * section[sectionCertificationOfMedicalNecessity].entry[PriorAuthorizationCodePayer] only Reference(Observation)
@@ -118,5 +118,5 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionTransportInstructions].entry contains
 	TrasnportInstructions 0..1 MS and
 	DestinationInformation 0..1 MS
-* section[sectionTransportInstructions].entry[TrasnportInstructions] only text
-* section[sectionTransportInstructions].entry[Destination] only Reference(Location)
+* section[sectionTransportInstructions].entry[TrasnportInstructions] Reference(Observation)
+* section[sectionTransportInstructions].entry[Destination] Reference(Location)
