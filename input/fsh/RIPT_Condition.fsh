@@ -4,7 +4,6 @@ Id:             IHE.PCC.RIPT.Condition
 Title: "RIPT Condition"
 Description:      " This profile represents the constraints applied to the Condition resource by the Refferal For Interfacility Patient Trasnport (RIPT) FHIR Implementation Guide."
 
-
 * code ^slicing.discriminator.type = #pattern
 * code ^slicing.discriminator.path = "code"
 * code ^slicing.rules = #open
