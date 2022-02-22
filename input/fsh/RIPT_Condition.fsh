@@ -4,5 +4,4 @@ Id:             IHE.PCC.RIPT.Condition
 Title: "RIPT Condition"
 Description:      " This profile represents the constraints applied to the Condition resource by the Refferal For Interfacility Patient Trasnport (RIPT) FHIR Implementation Guide."
 
-* code.Binding = http://hl7.org/fhir/sid/icd-10 (Recommended) 
-
+* code from http://hl7.org/fhir/sid/icd-10 (Recommended) 
