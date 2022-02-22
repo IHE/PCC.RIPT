@@ -4,4 +4,4 @@ Id:             IHE.PCC.RIPT.Procedures
 Title: "RIPT Procedures"
 Description:      " This profile represents the constraints applied to the Procedures resource by the Refferal For Interfacility Patient Trasnport (RIPT) FHIR Implementation Guide."
 
-* code from http://hl7.org/fhir/sid/icd-10 (Recommended) 
+* code from http://hl7.org/fhir/sid/icd-10
