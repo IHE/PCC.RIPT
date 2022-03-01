@@ -109,7 +109,7 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionTransportInstructions].code = $loinc#74213-0
 * section[sectionTransportInstructions].code MS
 * section[sectionTransportInstructions].entry ..* MS
-* section[sectionTransportInstructions].entry Reference(Observation and Location)
+//* section[sectionTransportInstructions].entry Reference(Observation and Location)
 * section[sectionTransportInstructions].entry ^slicing.discriminator.type = #profile
 * section[sectionTransportInstructions].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionTransportInstructions].entry ^slicing.rules = #open
