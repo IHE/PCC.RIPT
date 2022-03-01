@@ -25,7 +25,7 @@ Id: RIPT.Medical.Necessity.VS
 * $SCT#62330004		"Oxygen therapy management"
 * $SCT#722179007		"Decreased muscle function"
 * $SCT#225563000		"Dependent for sitting"
-* $SCT#160685001		"Pressure ulcer of buttock"
+* $SCT#420226006		"Pressure ulcer"
 
 
 

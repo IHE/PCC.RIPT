@@ -115,10 +115,10 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionTransportInstructions].entry ^slicing.rules = #open
 * section[sectionTransportInstructions].entry ^short = "Transport Instructions Section Entries"
 * section[sectionTransportInstructions].entry ^definition = "This section contains narrative information provided by the patient’s care provider(s) to indicate any care that should be rendered during the transport and the Destination information."
-* section[sectionTransportInstructions].entry contains
-	TrasnportInstructions 0..1 MS and
-	DestinationInformation 0..1 MS and
-	DestinationType 0..1 MS
-* section[sectionTransportInstructions].entry[TrasnportInstructions] Reference(Observation)
-* section[sectionTransportInstructions].entry[DestinationInformation] Reference(Location)
-* section[sectionTransportInstructions].entry[DestinationInformation] Reference(Observation)
+//* section[sectionTransportInstructions].entry contains
+//	TrasnportInstructions 0..1 MS and
+//	DestinationInformation 0..1 MS and
+//	DestinationType 0..1 MS
+//* section[sectionTransportInstructions].entry[TrasnportInstructions] Reference(Observation)
+//* section[sectionTransportInstructions].entry[DestinationInformation] Reference(Location)
+//* section[sectionTransportInstructions].entry[DestinationInformation] Reference(Observation)
