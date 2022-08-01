@@ -18,7 +18,7 @@ the following cardinalities follow the documentation in the RIPT profile:
 - RE 0..1 IPS Vital Signs
 - RE 0..1 IPS History of Pregnancy
 - O 0..1 IPS Plan of Care
-- O 0..1 Payor
+- O 0..1 Payor 
 - RE 0..1 Coded Reason for Referral
 - RE 0..1 Transport Instructions
 """
@@ -74,12 +74,12 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionCertificationOfMedicalNecessity] ^definition = "The Certification of Medical Necessity section includes the information necessary to document the justification for the medical transport, including the name and role of the person authorizing the medical transport. This information can be used to generate a Certificate of Medical Necessity (CMN) document for signature."
 * section[sectionCertificationOfMedicalNecessity].code = $loinc#52016-3
 * section[sectionCertificationOfMedicalNecessity].code MS
-* section[sectionCertificationOfMedicalNecessity].entry ..1 MS
+* section[sectionCertificationOfMedicalNecessity].entry ..* MS
 //* section[sectionCertificationOfMedicalNecessity].entry Reference(Observation and Practitioner and PractitionerRole)
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.discriminator.type = #profile
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.rules = #open
-* section[sectionCertificationOfMedicalNecessity].entry ^short = "Certification of Medical Necessity"
+* section[sectionCertificationOfMedicalNecessity].entry ^short = "Medical Necessity Entry"
 * section[sectionCertificationOfMedicalNecessity].entry ^definition = "Indication of whether a physician certification statement (PCS) is available documenting the medical necessity for the EMS encounter. The Certification of Medical Necessity section includes the information necessary to document the justification for the medical transport, including the name and role of the person authorizing the medical transport. This information can be used to generate a Certificate of Medical Necessity (CMN) document for signature."
 * section[sectionCertificationOfMedicalNecessity].entry contains
 	MedicalNecessityEntry 0..1 MS and 
@@ -114,11 +114,8 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionTransportInstructions].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionTransportInstructions].entry ^slicing.rules = #open
 * section[sectionTransportInstructions].entry ^short = "Transport Instructions Section Entries"
-* section[sectionTransportInstructions].entry ^definition = "This section contains narrative information provided by the patient’s care provider(s) to indicate any care that should be rendered during the transport and the Destination information."
-//* section[sectionTransportInstructions].entry contains
-//	TrasnportInstructions 0..1 MS and
-//	DestinationInformation 0..1 MS and
-//	DestinationType 0..1 MS
-//* section[sectionTransportInstructions].entry[TrasnportInstructions] Reference(Observation)
-//* section[sectionTransportInstructions].entry[DestinationInformation] Reference(Location)
-//* section[sectionTransportInstructions].entry[DestinationInformation] Reference(Observation)
+* section[sectionTransportInstructions].entry ^definition = "This section contains information provided by the patient’s care provider(s) to indicate any care that should be rendered during the transport and the Destination information."
+* section[sectionTransportInstructions].entry contains
+	TrasnportInstructions 0..1 MS and
+	DestinationInformation 0..1 MS
+* section[sectionTransportInstructions].entry[DestinationInformation] only Reference(Location)
