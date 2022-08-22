@@ -65,7 +65,7 @@ the following cardinalities follow the documentation in the RIPT profile:
 	SimpleObservations 1..1 MS and 
 	ConditionsEntry 1..1 MS
 * section[sectionReasonForReferral].entry[SimpleObservations] only Reference(Observation)
-* section[sectionReasonForReferral].entry[ConditionsEntry] only Reference(ConditionUvIps)
+* section[sectionReasonForReferral].entry[ConditionsEntry] only Reference(ConditionUvIps)  
 
 
 * section[sectionCertificationOfMedicalNecessity] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
