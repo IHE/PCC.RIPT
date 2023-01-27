@@ -4,7 +4,7 @@
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
 id: ihe.pcc.ript
 canonical: http://profiles.ihe.net/PCC/RIPT
-version: 2.0.0-current
+version: 2.0.0-draft
 name: IHE_PCC_RIPT
 title: "IHE PCC - Routine Interfacility Patient Transport (RIPT)"
 description: This Implementation Guide addresses patient transport between hospitals and Emergency Medical Service (EMS) systems. Defining the hospital patient discharge documentation provided to the EMS transport team that informs them of important patient care information. 
