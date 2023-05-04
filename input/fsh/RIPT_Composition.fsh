@@ -55,7 +55,6 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionReasonForReferral].code = $loinc#42349-1
 * section[sectionReasonForReferral].code MS
 * section[sectionReasonForReferral].entry 2..2 MS
-//* section[sectionReasonForReferral].entry Reference(Observation and ConditionUvIps)
 * section[sectionReasonForReferral].entry ^slicing.discriminator.type = #profile
 * section[sectionReasonForReferral].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionReasonForReferral].entry ^slicing.rules = #open
@@ -75,31 +74,11 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionCertificationOfMedicalNecessity].code = $loinc#52016-3
 * section[sectionCertificationOfMedicalNecessity].code MS
 * section[sectionCertificationOfMedicalNecessity].entry ..* MS
-//* section[sectionCertificationOfMedicalNecessity].entry Reference(Observation and Practitioner and PractitionerRole)
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.discriminator.type = #profile
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionCertificationOfMedicalNecessity].entry ^slicing.rules = #open
 * section[sectionCertificationOfMedicalNecessity].entry ^short = "Medical Necessity Entry"
 * section[sectionCertificationOfMedicalNecessity].entry ^definition = "Indication of whether a physician certification statement (PCS) is available documenting the medical necessity for the EMS encounter. The Certification of Medical Necessity section includes the information necessary to document the justification for the medical transport, including the name and role of the person authorizing the medical transport. This information can be used to generate a Certificate of Medical Necessity (CMN) document for signature."
-* section[sectionCertificationOfMedicalNecessity].entry contains
-	MedicalNecessityEntry 0..1 MS and 
-	Signature 0..1 MS and
-	SignatureDate 0..1 MS and
-	SignerProviderType 0..1 MS and
-	SignerName 0..1 MS and
-	Justification 0..1 MS and 
-	ReasonForTransport 0..1 MS and 
-	PriorAuthorizationCode 0..1 and
-	PriorAuthorizationCodePayer 0..1
-* section[sectionCertificationOfMedicalNecessity].entry[MedicalNecessityEntry] only Reference(Observation)
-* section[sectionCertificationOfMedicalNecessity].entry[Signature] only Reference(Observation)
-* section[sectionCertificationOfMedicalNecessity].entry[SignatureDate] only Reference(Observation)
-* section[sectionCertificationOfMedicalNecessity].entry[SignerProviderType] only Reference(PractitionerRole)
-* section[sectionCertificationOfMedicalNecessity].entry[SignerName] only Reference(Practitioner)
-* section[sectionCertificationOfMedicalNecessity].entry[Justification] only Reference(Observation)
-* section[sectionCertificationOfMedicalNecessity].entry[ReasonForTransport] only Reference(Observation)
-* section[sectionCertificationOfMedicalNecessity].entry[PriorAuthorizationCode] only Reference(Observation)
-* section[sectionCertificationOfMedicalNecessity].entry[PriorAuthorizationCodePayer] only Reference(Observation)
 
 
 * section[sectionTransportInstructions] ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
@@ -109,7 +88,6 @@ the following cardinalities follow the documentation in the RIPT profile:
 * section[sectionTransportInstructions].code = $loinc#74213-0
 * section[sectionTransportInstructions].code MS
 * section[sectionTransportInstructions].entry ..* MS
-//* section[sectionTransportInstructions].entry Reference(Observation and Location)
 * section[sectionTransportInstructions].entry ^slicing.discriminator.type = #profile
 * section[sectionTransportInstructions].entry ^slicing.discriminator.path = "resolve()"
 * section[sectionTransportInstructions].entry ^slicing.rules = #open
@@ -119,3 +97,10 @@ the following cardinalities follow the documentation in the RIPT profile:
 	TrasnportInstructions 0..1 MS and
 	DestinationInformation 0..1 MS
 * section[sectionTransportInstructions].entry[DestinationInformation] only Reference(Location)
+
+
+* section[sectionProblems].entry[problem] Reference(IHE_RIPT_Condition)
+
+* section[sectionProceduresHx].entry[procedure] Reference(IHE_RIPT_Procedures)
+
+* section[sectionAllergies].entry[allergyOrIntolerance] Reference(IHE_RIPT_AllergyIntolerance)
