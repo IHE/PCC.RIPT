@@ -19,7 +19,7 @@ the following cardinalities follow the documentation in the RIPT profile:
 - RE 0..1 IPS History of Pregnancy
 - O 0..1 IPS Plan of Care
 - O 0..1 Payor 
-- RE 0..1 Coded Reason for Referral
+- RE 0..1 Coded Reason for Referral  
 - RE 0..1 Transport Instructions
 """
 * subject 1..1
